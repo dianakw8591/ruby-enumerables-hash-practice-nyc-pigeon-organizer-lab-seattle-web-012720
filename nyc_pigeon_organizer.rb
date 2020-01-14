@@ -8,6 +8,7 @@ def nyc_pigeon_organizer(data)
         i += 1
       end
       memo_2
+      p memo
     end
     memo
   end
