@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
-  data.reduce({}) do |memo, (data_key, hash)|
+  data.reduce(memo = {}) do |memo, (data_key, hash)|
     hash.reduce(memo = {}) do |memo, (quality, name_array)|
       i = 0
       while i < name_array.length do
