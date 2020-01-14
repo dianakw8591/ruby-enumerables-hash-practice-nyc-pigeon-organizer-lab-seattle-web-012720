@@ -1,9 +1,11 @@
 def nyc_pigeon_organizer(data)
   data.reduce({}) do |memo, (data_key, hash)|
-    p memo
-    p data_key
-    p hash
-    #hash.reduce({}) do |memo_2, (quality, name_array)|
+    hash.reduce({}) do |memo_2, (quality, name_array)|
+      p memo_2
+      p quality
+      p name_array
+      memo_2
+    end
      # i = 0
     #  if !memo_2[data_key]
      #   memo_2[data_key] = [quality.to_s]
