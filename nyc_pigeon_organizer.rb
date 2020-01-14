@@ -5,9 +5,9 @@ def nyc_pigeon_organizer(data)
       while i < name_array.length do
         memo[name_array[i]] = {data_key => quality.to_s}
         i += 1
-        p memo
       end
       memo
+      p memo
     end
      # i = 0
     #  if !memo_2[data_key]
