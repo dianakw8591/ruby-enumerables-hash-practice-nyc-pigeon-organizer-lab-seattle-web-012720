@@ -5,6 +5,7 @@ def nyc_pigeon_organizer(data)
       while i < name_array.length do
         memo[name_array[i]] = {}
         i += 1
+        p memo
       end
       memo
     end
