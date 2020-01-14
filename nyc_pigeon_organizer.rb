@@ -1,6 +1,8 @@
 def nyc_pigeon_organizer(data)
   data.reduce({}) do |memo, (data_key, hash)|
-    memo[data_key] = hash
+    p memo
+    p data_key
+    p hash
     #hash.reduce({}) do |memo_2, (quality, name_array)|
      # i = 0
     #  if !memo_2[data_key]
