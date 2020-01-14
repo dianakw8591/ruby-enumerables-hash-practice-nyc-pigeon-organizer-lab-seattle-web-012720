@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
     hash.reduce({}) do |memo, (quality, name_array)|
       i = 0
       while i < name_array.length do
-        memo[name_array[i]] = {quality}
+        memo[name_array[i]] = {data_key: quality}
         i += 1
         p memo
       end
