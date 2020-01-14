@@ -8,6 +8,7 @@ def nyc_pigeon_organizer(data)
           memo[name_array[i]] = memo_2
         else
           memo[name_array[i]][data_key] = [quality.to_s]
+        end
         i += 1
       end
       memo_2
