@@ -6,7 +6,8 @@ def nyc_pigeon_organizer(data)
         if !memo[name_array[i]][data_key]
           memo[name_array[i]] = {data_key => [quality.to_s]}
         else
-          memo[name_array[i]][data_key]
+          memo[name_array[i]][data_key] << quality.to_s
+        end
         i += 1
       end
       memo
