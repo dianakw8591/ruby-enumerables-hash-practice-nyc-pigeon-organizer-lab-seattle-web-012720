@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
       i = 0
       memo_2[name[i]] = []
       while i < name.length do
-        memo_2[name[i]] << quality.to_s
+        memo_2[name[i]] << data_key
         i += 1
         p memo_2
       end
