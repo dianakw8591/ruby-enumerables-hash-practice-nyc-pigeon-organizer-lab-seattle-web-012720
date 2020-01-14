@@ -5,16 +5,10 @@ def nyc_pigeon_organizer(data)
       memo_2[data_key] = []
       while i < name_array.length do
         memo[name_array[i]] = memo_2 
-        memo_2[data_key] << quality.to_s
         i += 1
         p memo_2
       end
-    #hash.reduce({}) do |memo_2, (quality, name)|
-     # p memo
-      #memo[name][data_key] = [quality.to_s] if !memo[name][data_key] 
-      #memo[name][data_key] << quality.to_s
-      #p memo
-    #end
+      memo_2[data_key] << quality.to_s
     end
   end
   memo
