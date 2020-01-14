@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
-  sorted_pigeons = data.reduce({}) do |memo, (data_key, hash)|
+  data.reduce({}) do |memo, (data_key, hash)|
     memo[data_key] = hash.reduce({}) do |memo_2, (quality, name)|
       i = 0
       memo_2[name[i]] = []
