@@ -15,6 +15,7 @@ def nyc_pigeon_organizer(data)
       #p memo
     #end
     end
+    memo[name] = memo_2
   end
   memo
 end
