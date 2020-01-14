@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
   data.reduce({}) do |memo, (data_key, hash)|
-    memo[data_key] = hash.reduce({}) do |memo_2, (quality, name)|
+    hash.reduce({}) do |memo_2, (quality, name)|
       i = 0
       memo_2[name[i]] = []
       while i < name.length do
